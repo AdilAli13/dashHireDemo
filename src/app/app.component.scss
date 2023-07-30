@@ -1,0 +1,11 @@
+.mainContainer {
+ display: flex;
+ .reports{
+    padding: 20px;
+    background-color: rgb(255, 250, 254);
+    width: 100%;
+ }
+ .header {
+   box-shadow: 5px 5px 5px #939393;
+ }
+}

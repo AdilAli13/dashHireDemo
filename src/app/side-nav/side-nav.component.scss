@@ -1,0 +1,49 @@
+.main-menu {
+    
+    width: 200px;
+    min-width: 100px;
+    min-height: 1030px;
+    overflow-y: auto;
+    background-color: #4397e0;
+    color: #fff;
+
+    padding-top: 20px;
+    .menu-item {
+      display: block;
+      padding: 10px 20px 10px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        fa-icon {
+            color: black;
+        }
+        span {
+            color: black;
+        }
+        mat-icon {
+            color: black;
+        }
+      }
+      fa-icon {
+        margin-right: 10px;
+        font-size: 9px;
+      }
+      span {
+        display: inline;
+        font-size: 12px;
+      }
+      mat-icon {
+        font-size: 15px;
+        float: right;
+      }
+    }
+  }
+
+  .selected {
+    background-color: white;
+    color: black;
+    :hover {
+        background-color: #4397e0;
+        color: #fff;
+    }
+  }

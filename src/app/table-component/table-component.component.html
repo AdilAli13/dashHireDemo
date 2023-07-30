@@ -1,0 +1,52 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="zone">
+        <th mat-header-cell *matHeaderCellDef> Zone </th>
+        <td mat-cell *matCellDef="let element"> {{element.zone}} </td>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="region">
+        <th mat-header-cell *matHeaderCellDef> Region </th>
+        <td mat-cell *matCellDef="let element"> {{element.region}} </td>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="team">
+        <th mat-header-cell *matHeaderCellDef> Team </th>
+        <td mat-cell *matCellDef="let element"> {{element.team}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="month">
+        <th mat-header-cell *matHeaderCellDef> Month </th>
+        <td mat-cell *matCellDef="let element"> {{element.month}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="royalities">
+        <th mat-header-cell *matHeaderCellDef> Royalities </th>
+        <td mat-cell *matCellDef="let element"> {{element.royalities}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="enrolements">
+        <th mat-header-cell *matHeaderCellDef> Enrolements </th>
+        <td mat-cell *matCellDef="let element"> {{element.enrolements}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons 
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+  </div>
+  

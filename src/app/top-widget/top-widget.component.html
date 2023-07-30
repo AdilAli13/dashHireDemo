@@ -1,0 +1,59 @@
+<div class="drop-down-menu">
+    
+    <mat-form-field>
+        <mat-label>Type</mat-label>
+        <mat-select [(ngModel)]="selectedType" name="food">
+          <mat-option *ngFor="let item of type" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Zone</mat-label>
+        <mat-select [(ngModel)]="selectedZone" name="food">
+          <mat-option *ngFor="let item of region" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Region</mat-label>
+        <mat-select [(ngModel)]="selectedRegion" name="food">
+          <mat-option *ngFor="let item of region" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>  
+       <mat-form-field>
+        <mat-label>Team Type</mat-label>
+        <mat-select [(ngModel)]="selectedTeam" name="food">
+          <mat-option *ngFor="let item of team" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select> 
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Person Name</mat-label>
+        <mat-select [(ngModel)]="selectedPerson" name="food">
+          <mat-option *ngFor="let item of person" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Center Type</mat-label>
+        <mat-select [(ngModel)]="selectedCenter" name="food">
+          <mat-option *ngFor="let item of center" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Center Name</mat-label>
+        <mat-select [(ngModel)]="selectedCenters" name="food">
+          <mat-option *ngFor="let item of centers" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>
